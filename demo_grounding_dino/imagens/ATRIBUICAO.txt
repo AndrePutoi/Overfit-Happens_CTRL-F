@@ -1,0 +1,2 @@
+Imagens do Porto © colaboradores do Mapillary, CC BY-SA 4.0 (mapillary.com). Já ANONIMIZADAS (rostos e matrículas desfocados; sha256 verificado contra data/images_anon/manifest.jsonl).
+São imagens da VALIDAÇÃO do detetor final de lixo (nenhum treino as viu). Origem das anotações: final_lixo_annotations.zip.

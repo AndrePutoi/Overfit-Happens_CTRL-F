@@ -1,0 +1,25 @@
+{
+ "nome": "exemplo_baixa_lisboa",
+ "bbox": [
+  -9.139902,
+  38.707878,
+  -9.134146,
+  38.712369
+ ],
+ "centro": {
+  "lat": 38.7101237,
+  "lon": -9.1370238
+ },
+ "raio_m": 250.0,
+ "since": "2023-01-01",
+ "max": 20,
+ "max_panoramas": 4,
+ "stride": 1,
+ "fonte_da_caixa": {
+  "tipo": "osm_nominatim",
+  "consulta": "Baixa, Lisboa",
+  "encontrado": "Baixa, Madalena, Lisboa, Portugal",
+  "osm": "way/394631209",
+  "licenca": "© colaboradores do OpenStreetMap (ODbL)"
+ }
+}

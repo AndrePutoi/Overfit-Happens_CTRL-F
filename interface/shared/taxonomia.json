@@ -1,0 +1,457 @@
+{
+  "versao": 2,
+  "municipio": "Aveiro",
+  "nota": "Lista única de classes. Os nomes das classes e dos tipos são os do pipeline (entrega v1.0): class = sinal | poste_luz | candeeiro | contentor | subterraneo | banco (família mobiliario, entrega v1.1+); subclass dos sinais = tipo MTSD. Esta tabela acrescenta o nome em português, o grupo e o código do Regulamento de Sinalização do Trânsito (DR 22-A/98) só quando é seguro; codigo null = a confirmar.",
+  "familias": {
+    "sinal": {
+      "label": "Sinalização vertical",
+      "cor": "#C62D28",
+      "classes": {
+        "sinal": {
+          "label": "Sinal"
+        }
+      },
+      "grupos": {
+        "prioridade": "Cedência de passagem",
+        "proibicao": "Proibição",
+        "obrigacao": "Obrigação",
+        "regulamentacao": "Regulamentação (tipo por identificar)",
+        "perigo": "Perigo",
+        "informacao": "Informação",
+        "complementar": "Painéis complementares",
+        "orientacao": "Orientação e outros",
+        "desconhecido": "Não identificado"
+      },
+      "grupo_por_classe_detecao": {
+        "regulamentacao": "regulamentacao",
+        "perigo": "perigo",
+        "informacao": "informacao",
+        "complementar": "complementar",
+        "orientacao_outros": "orientacao"
+      },
+      "tipos": {
+        "regulatory_stop": {
+          "grupo": "prioridade",
+          "codigo": "B2",
+          "nome": "Paragem obrigatória (STOP)"
+        },
+        "regulatory_yield": {
+          "grupo": "prioridade",
+          "codigo": "B1",
+          "nome": "Cedência de passagem"
+        },
+        "regulatory_no_entry": {
+          "grupo": "proibicao",
+          "codigo": "C1",
+          "nome": "Sentido proibido"
+        },
+        "regulatory_maximum_speed_limit_30": {
+          "grupo": "proibicao",
+          "codigo": "C13",
+          "nome": "Limite de velocidade 30"
+        },
+        "regulatory_maximum_speed_limit_40": {
+          "grupo": "proibicao",
+          "codigo": "C13",
+          "nome": "Limite de velocidade 40"
+        },
+        "regulatory_maximum_speed_limit_50": {
+          "grupo": "proibicao",
+          "codigo": "C13",
+          "nome": "Limite de velocidade 50"
+        },
+        "regulatory_no_parking": {
+          "grupo": "proibicao",
+          "codigo": "C15",
+          "nome": "Estacionamento proibido"
+        },
+        "regulatory_no_stopping": {
+          "grupo": "proibicao",
+          "codigo": "C16",
+          "nome": "Paragem e estacionamento proibidos"
+        },
+        "regulatory_no_right_turn": {
+          "grupo": "proibicao",
+          "codigo": null,
+          "nome": "Proibido virar à direita"
+        },
+        "regulatory_no_left_turn": {
+          "grupo": "proibicao",
+          "codigo": null,
+          "nome": "Proibido virar à esquerda"
+        },
+        "regulatory_road_closed_to_vehicles": {
+          "grupo": "proibicao",
+          "codigo": null,
+          "nome": "Trânsito proibido"
+        },
+        "regulatory_no_pedestrians": {
+          "grupo": "proibicao",
+          "codigo": null,
+          "nome": "Proibido a peões"
+        },
+        "regulatory_no_heavy_goods_vehicles": {
+          "grupo": "proibicao",
+          "codigo": null,
+          "nome": "Proibido a pesados de mercadorias"
+        },
+        "regulatory_end_of_prohibition": {
+          "grupo": "proibicao",
+          "codigo": null,
+          "nome": "Fim de proibição"
+        },
+        "regulatory_roundabout": {
+          "grupo": "obrigacao",
+          "codigo": "D4",
+          "nome": "Rotunda"
+        },
+        "regulatory_bicycles_only": {
+          "grupo": "obrigacao",
+          "codigo": "D7a",
+          "nome": "Pista obrigatória para velocípedes"
+        },
+        "regulatory_go_straight": {
+          "grupo": "obrigacao",
+          "codigo": null,
+          "nome": "Obrigatório seguir em frente"
+        },
+        "regulatory_keep_right": {
+          "grupo": "obrigacao",
+          "codigo": null,
+          "nome": "Obrigatório contornar pela direita"
+        },
+        "regulatory_turn_right": {
+          "grupo": "obrigacao",
+          "codigo": null,
+          "nome": "Obrigatório virar à direita"
+        },
+        "regulatory_turn_right_ahead": {
+          "grupo": "obrigacao",
+          "codigo": null,
+          "nome": "Obrigatório virar à direita (adiante)"
+        },
+        "regulatory_turn_left": {
+          "grupo": "obrigacao",
+          "codigo": null,
+          "nome": "Obrigatório virar à esquerda"
+        },
+        "regulatory_turn_left_ahead": {
+          "grupo": "obrigacao",
+          "codigo": null,
+          "nome": "Obrigatório virar à esquerda (adiante)"
+        },
+        "regulatory_one_way_straight": {
+          "grupo": "informacao",
+          "codigo": null,
+          "nome": "Trânsito de sentido único"
+        },
+        "regulatory_outro": {
+          "grupo": "regulamentacao",
+          "codigo": null,
+          "nome": "Sinal de regulamentação por identificar"
+        },
+        "warning_road_bump": {
+          "grupo": "perigo",
+          "codigo": null,
+          "nome": "Lomba"
+        },
+        "warning_roadworks": {
+          "grupo": "perigo",
+          "codigo": null,
+          "nome": "Trabalhos na via"
+        },
+        "warning_two_way_traffic": {
+          "grupo": "perigo",
+          "codigo": null,
+          "nome": "Trânsito nos dois sentidos"
+        },
+        "warning_road_narrows": {
+          "grupo": "perigo",
+          "codigo": null,
+          "nome": "Estreitamento da faixa"
+        },
+        "warning_road_narrows_left": {
+          "grupo": "perigo",
+          "codigo": null,
+          "nome": "Estreitamento da faixa à esquerda"
+        },
+        "warning_road_narrows_right": {
+          "grupo": "perigo",
+          "codigo": null,
+          "nome": "Estreitamento da faixa à direita"
+        },
+        "warning_railroad_crossing_without_barriers": {
+          "grupo": "perigo",
+          "codigo": null,
+          "nome": "Passagem de nível sem guarda"
+        },
+        "warning_pedestrians_crossing": {
+          "grupo": "perigo",
+          "codigo": null,
+          "nome": "Travessia de peões"
+        },
+        "warning_roundabout": {
+          "grupo": "perigo",
+          "codigo": null,
+          "nome": "Rotunda (aviso)"
+        },
+        "warning_children": {
+          "grupo": "perigo",
+          "codigo": null,
+          "nome": "Crianças"
+        },
+        "warning_other_danger": {
+          "grupo": "perigo",
+          "codigo": null,
+          "nome": "Outros perigos"
+        },
+        "information_parking": {
+          "grupo": "informacao",
+          "codigo": "H1a",
+          "nome": "Estacionamento autorizado"
+        },
+        "information_pedestrians_crossing": {
+          "grupo": "informacao",
+          "codigo": "H7",
+          "nome": "Passagem para peões"
+        },
+        "information_road_bump": {
+          "grupo": "informacao",
+          "codigo": null,
+          "nome": "Lomba (informação)"
+        },
+        "information_tram_bus_stop": {
+          "grupo": "informacao",
+          "codigo": null,
+          "nome": "Paragem de transportes públicos"
+        },
+        "information_hospital": {
+          "grupo": "informacao",
+          "codigo": null,
+          "nome": "Hospital"
+        },
+        "information_dead_end": {
+          "grupo": "informacao",
+          "codigo": null,
+          "nome": "Via sem saída"
+        },
+        "information_motorway": {
+          "grupo": "informacao",
+          "codigo": null,
+          "nome": "Autoestrada"
+        },
+        "information_end_of_motorway": {
+          "grupo": "informacao",
+          "codigo": null,
+          "nome": "Fim de autoestrada"
+        },
+        "information_outro": {
+          "grupo": "informacao",
+          "codigo": null,
+          "nome": "Outro sinal de informação"
+        },
+        "complementary_distance": {
+          "grupo": "complementar",
+          "codigo": null,
+          "nome": "Painel de distância"
+        },
+        "complementary_tow_away_zone": {
+          "grupo": "complementar",
+          "codigo": null,
+          "nome": "Painel de reboque"
+        },
+        "orientacao_outros": {
+          "grupo": "orientacao",
+          "codigo": null,
+          "nome": "Sinal de orientação ou outro"
+        },
+        "desconhecido": {
+          "grupo": null,
+          "codigo": null,
+          "nome": "Sinal não identificado"
+        },
+        "complementary_chevron_left": {
+          "grupo": "complementar",
+          "codigo": null,
+          "nome": "Baliza de curva (esquerda)"
+        },
+        "complementary_go_left": {
+          "grupo": "complementar",
+          "codigo": null,
+          "nome": "Painel: seguir à esquerda"
+        },
+        "complementary_go_right": {
+          "grupo": "complementar",
+          "codigo": null,
+          "nome": "Painel: seguir à direita"
+        },
+        "complementary_obstacle_delineator": {
+          "grupo": "complementar",
+          "codigo": null,
+          "nome": "Baliza de obstáculo"
+        },
+        "complementary_trucks": {
+          "grupo": "complementar",
+          "codigo": null,
+          "nome": "Painel: veículos pesados"
+        },
+        "information_highway_exit": {
+          "grupo": "informacao",
+          "codigo": null,
+          "nome": "Saída de autoestrada"
+        },
+        "information_living_street": {
+          "grupo": "informacao",
+          "codigo": null,
+          "nome": "Zona de coexistência"
+        },
+        "information_telephone": {
+          "grupo": "informacao",
+          "codigo": null,
+          "nome": "Telefone"
+        },
+        "regulatory_go_straight_or_turn_right": {
+          "grupo": "obrigacao",
+          "codigo": null,
+          "nome": "Obrigatório seguir em frente ou virar à direita"
+        },
+        "regulatory_height_limit": {
+          "grupo": "proibicao",
+          "codigo": null,
+          "nome": "Altura máxima"
+        },
+        "regulatory_maximum_speed_limit_20": {
+          "grupo": "proibicao",
+          "codigo": "C13",
+          "nome": "Limite de velocidade 20"
+        },
+        "regulatory_maximum_speed_limit_80": {
+          "grupo": "proibicao",
+          "codigo": "C13",
+          "nome": "Limite de velocidade 80"
+        },
+        "regulatory_no_motor_vehicles_except_motorcycles": {
+          "grupo": "proibicao",
+          "codigo": null,
+          "nome": "Trânsito proibido a automóveis (exceto motociclos)"
+        },
+        "regulatory_no_u_turn": {
+          "grupo": "proibicao",
+          "codigo": null,
+          "nome": "Proibido inverter o sentido de marcha"
+        },
+        "regulatory_one_way_right": {
+          "grupo": "informacao",
+          "codigo": null,
+          "nome": "Trânsito de sentido único (direita)"
+        },
+        "regulatory_priority_road": {
+          "grupo": "prioridade",
+          "codigo": null,
+          "nome": "Estrada com prioridade"
+        },
+        "warning_crossroads": {
+          "grupo": "perigo",
+          "codigo": null,
+          "nome": "Cruzamento"
+        },
+        "warning_school_zone": {
+          "grupo": "perigo",
+          "codigo": null,
+          "nome": "Zona escolar"
+        },
+        "warning_stop_ahead": {
+          "grupo": "perigo",
+          "codigo": null,
+          "nome": "Sinal de paragem obrigatória à frente"
+        },
+        "warning_winding_road_first_right": {
+          "grupo": "perigo",
+          "codigo": null,
+          "nome": "Curvas, a primeira à direita"
+        }
+      }
+    },
+    "iluminacao": {
+      "label": "Iluminação pública",
+      "cor": "#E8A900",
+      "classes": {
+        "candeeiro": {
+          "label": "Candeeiro"
+        },
+        "poste_luz": {
+          "label": "Poste de iluminação"
+        }
+      }
+    },
+    "residuos": {
+      "label": "Resíduos",
+      "cor": "#1E7A4C",
+      "classes": {
+        "contentor": {
+          "label": "Contentor de superfície",
+          "instalacao": [
+            "ilha",
+            "indiferenciado"
+          ]
+        },
+        "subterraneo": {
+          "label": "Contentor subterrâneo",
+          "instalacao": [
+            "subterraneo"
+          ]
+        }
+      }
+    },
+    "mobiliario": {
+      "label": "Bancos",
+      "cor": "#8A5A2B",
+      "classes": {
+        "banco": {
+          "label": "Banco"
+        }
+      }
+    }
+  },
+  "instalacao": {
+    "subterraneo": "Subterrâneo",
+    "ilha": "Ilha de reciclagem",
+    "indiferenciado": "Indiferenciado"
+  },
+  "cores_ecoponto": {
+    "verde": {
+      "label": "Verde",
+      "residuo": "vidro",
+      "hex": "#2E8540"
+    },
+    "azul": {
+      "label": "Azul",
+      "residuo": "papel e cartão",
+      "hex": "#1F6FD1"
+    },
+    "amarelo": {
+      "label": "Amarelo",
+      "residuo": "embalagens",
+      "hex": "#F2C200"
+    },
+    "vermelho": {
+      "label": "Vermelho",
+      "residuo": "pilhas",
+      "hex": "#C62D28"
+    },
+    "cinzento": {
+      "label": "Cinzento",
+      "residuo": "indiferenciados",
+      "hex": "#6B6B6B"
+    },
+    "castanho": {
+      "label": "Castanho",
+      "residuo": "biorresíduos",
+      "hex": "#7A4E2D"
+    }
+  },
+  "incerteza_posicao_m": {
+    "vista_unica": 15,
+    "nota": "Erro típico dos elementos vistos numa só imagem, medido pelo pipeline contra o OSM. Nos triangulados usa-se geo_residual."
+  }
+}

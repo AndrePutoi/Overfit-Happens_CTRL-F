@@ -1,0 +1,32 @@
+# Parâmetros do pipeline. Só a secção `privacidade` é lida pelo código (privacy/gate.py); as restantes são os valores
+# hardcoded hoje (indicado a origem), fonte única para quando os módulos passarem a lê-las.
+
+classificador_sinais:
+  # null = hierarquia desligada (omissão segura enquanto não houver rejeição de não-sinais, ver docs/ESTADO_E_ESTRUTURA.md §5.1).
+  # Para ativar: models/hier_sinal_gtsrb/manifest.json  (equivale à variável CTRLF_HIER_MANIFEST)
+  manifesto_ativo: null
+
+deteccao:
+  conf: 0.3                      # limiar usado nas corridas de A (pipeline/run_pipeline.py, tests/unit/03)
+  contentor_dedup_iou: 0.7       # valor usado na inferência (detection/subclass/urban_branches.dedup_contentor)
+
+geometria:
+  hfov_deg: 65.0                 # estimativa para câmaras em perspetiva (pipeline/run_pipeline.py); por calibrar
+  eps_m:                         # raio de agrupamento por classe, em metros (pipeline/dedup.py: EPS_M)
+    sinal: 1.5
+    candeeiro: 2.5
+    poste: 2.5
+    contentor: 2.0
+
+privacidade:                       # LIDO por privacy/gate.py (o portão que antecede o Grounding DINO)
+  modo_desfoque: faces-plates      # faces-plates = só rostos + matrículas (carro intacto); strict = também o veículo inteiro
+  # Pesos: por omissão os do backend RF-DETR em $UMS_MODELS_DIR (detector_rostos, detector_matriculas, bench_detector/rf-detr-small.pth para pessoas/veículos) + YuNet.
+  # Só se descomentar estas duas linhas com ficheiros .pt (YOLO, exige ultralytics e UMS_PRIVACY_BACKEND=yolo):
+  # pesos_matriculas: models/plates/morsetech_v1l/license-plate-finetune-v1l.pt
+  # pesos_rostos: models/faces/uralman_yolo26l/best.pt
+  mosaico_matriculas: null         # null = 640 px no faces-plates, 960 px no strict (px por mosaico; 0 = imagem inteira)
+  imgsz_matriculas: 1280
+  conf_matriculas: 0.1
+  mosaico_rostos: 960
+  imgsz_rostos: 1280
+  conf_rostos: 0.25

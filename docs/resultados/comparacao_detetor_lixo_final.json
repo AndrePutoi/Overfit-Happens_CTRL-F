@@ -1,0 +1,98 @@
+{
+ "validacao": {
+  "imagens": 226,
+  "caixas": 152,
+  "categorias": [
+   "contentor",
+   "subterraneo"
+  ]
+ },
+ "modelos": {
+  "v1 (2 classes, 1ª versão)": {
+   "classes": [
+    "contentor",
+    "subterraneo"
+   ],
+   "A_papeleira_descartada": {
+    "caixas_gt": 152,
+    "deteccoes": 65708,
+    "mAP50-95": 0.3665,
+    "mAP50": 0.5655,
+    "mAP50-95_por_classe": {
+     "contentor": 0.2182,
+     "subterraneo": 0.5149
+    }
+   }
+  },
+  "v3 (3 classes)": {
+   "classes": [
+    "contentor",
+    "subterraneo",
+    "papeleira"
+   ],
+   "A_papeleira_descartada": {
+    "caixas_gt": 152,
+    "deteccoes": 52848,
+    "mAP50-95": 0.3879,
+    "mAP50": 0.6161,
+    "mAP50-95_por_classe": {
+     "contentor": 0.244,
+     "subterraneo": 0.5319
+    }
+   },
+   "B_papeleira_como_contentor": {
+    "caixas_gt": 152,
+    "deteccoes": 65874,
+    "mAP50-95": 0.3624,
+    "mAP50": 0.5724,
+    "mAP50-95_por_classe": {
+     "contentor": 0.1929,
+     "subterraneo": 0.5319
+    }
+   }
+  },
+  "v2 (3 classes, correções do Porto)": {
+   "classes": [
+    "contentor",
+    "subterraneo",
+    "papeleira"
+   ],
+   "A_papeleira_descartada": {
+    "caixas_gt": 152,
+    "deteccoes": 53575,
+    "mAP50-95": 0.4146,
+    "mAP50": 0.639,
+    "mAP50-95_por_classe": {
+     "contentor": 0.2667,
+     "subterraneo": 0.5625
+    }
+   },
+   "B_papeleira_como_contentor": {
+    "caixas_gt": 152,
+    "deteccoes": 64544,
+    "mAP50-95": 0.3994,
+    "mAP50": 0.6101,
+    "mAP50-95_por_classe": {
+     "contentor": 0.2364,
+     "subterraneo": 0.5625
+    }
+   }
+  },
+  "FINAL (2 classes, Porto, sem papeleira)": {
+   "classes": [
+    "contentor",
+    "subterraneo"
+   ],
+   "A_papeleira_descartada": {
+    "caixas_gt": 152,
+    "deteccoes": 46516,
+    "mAP50-95": 0.4324,
+    "mAP50": 0.6851,
+    "mAP50-95_por_classe": {
+     "contentor": 0.3149,
+     "subterraneo": 0.55
+    }
+   }
+  }
+ }
+}

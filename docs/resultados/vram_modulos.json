@@ -1,0 +1,95 @@
+{
+ "gpu_total_mb": 6144.0,
+ "modulos": [
+  {
+   "modulo": "privacidade",
+   "contexto_mb": 112.0,
+   "carregado_mb": 3130.0,
+   "pico_mb": 3136.0,
+   "torch_pico_mb": 1788,
+   "carregar_s": 4.7,
+   "inferencia_s": 0.63,
+   "nota": "YuNet (OpenCV) + YOLO rostos + YOLO matrículas, 1 imagem 1066x799"
+  },
+  {
+   "modulo": "rfdetr_sinais",
+   "contexto_mb": 112.0,
+   "carregado_mb": 112.0,
+   "pico_mb": 388.0,
+   "torch_pico_mb": 229,
+   "carregar_s": 3.7,
+   "inferencia_s": 0.05,
+   "nota": "RF-DETR, 1 imagem 1066x799"
+  },
+  {
+   "modulo": "rfdetr_contentores",
+   "contexto_mb": 112.0,
+   "carregado_mb": 112.0,
+   "pico_mb": 322.0,
+   "torch_pico_mb": 172,
+   "carregar_s": 3.3,
+   "inferencia_s": 0.02,
+   "nota": "RF-DETR, 1 imagem 1066x799"
+  },
+  {
+   "modulo": "rfdetr_bancos",
+   "contexto_mb": 112.0,
+   "carregado_mb": 112.0,
+   "pico_mb": 340.0,
+   "torch_pico_mb": 191,
+   "carregar_s": 3.1,
+   "inferencia_s": 0.03,
+   "nota": "RF-DETR MEDIUM com PESOS ALEATÓRIOS (mesma memória que o checkpoint COCO), 1 imagem 1066x799"
+  },
+  {
+   "modulo": "grounding_dino",
+   "contexto_mb": 112.0,
+   "carregado_mb": 782.0,
+   "pico_mb": 2348.0,
+   "torch_pico_mb": 1852,
+   "carregar_s": 11.1,
+   "inferencia_s": 0.41,
+   "nota": "Grounding DINO Tiny + NMS, 1 imagem 1066x799, 6 frases"
+  },
+  {
+   "modulo": "clip_b32",
+   "contexto_mb": 112.0,
+   "carregado_mb": 774.0,
+   "pico_mb": 908.0,
+   "torch_pico_mb": 703,
+   "carregar_s": 4.2,
+   "inferencia_s": 0.1,
+   "nota": "CLIP ViT-B/32 (serve a papeleira e o estilo da luz), lote de 32 recortes"
+  },
+  {
+   "modulo": "sinais_hierarquico",
+   "contexto_mb": 112.0,
+   "carregado_mb": 594.0,
+   "pico_mb": 736.0,
+   "torch_pico_mb": 527,
+   "carregar_s": 4.0,
+   "inferencia_s": 0.06,
+   "nota": "router + especialistas (DINOv2-small cada), lote de 16 recortes"
+  },
+  {
+   "modulo": "dinov2_fluxo",
+   "contexto_mb": 112.0,
+   "carregado_mb": 224.0,
+   "pico_mb": 456.0,
+   "torch_pico_mb": 259,
+   "carregar_s": 3.1,
+   "inferencia_s": 0.12,
+   "nota": "DINOv2-small afinado (fluxo), lote de 32 recortes, fp32"
+  },
+  {
+   "modulo": "profundidade",
+   "contexto_mb": 112.0,
+   "carregado_mb": 226.0,
+   "pico_mb": 492.0,
+   "torch_pico_mb": 247,
+   "carregar_s": 2.9,
+   "inferencia_s": 0.07,
+   "nota": "Depth Anything V2 Metric Small, 1 imagem 1066x799"
+  }
+ ]
+}

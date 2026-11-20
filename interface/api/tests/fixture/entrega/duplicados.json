@@ -1,0 +1,24 @@
+{
+ "groups": [
+  {
+   "id": "dup-lz-0001",
+   "family": "iluminacao",
+   "members": [
+    "ilu-aveiro-00012",
+    "ilu-aveiro-00015"
+   ],
+   "suggested_keep": "ilu-aveiro-00012",
+   "max_distance_m": 7.8
+  }
+ ],
+ "pairs": [
+  {
+   "a": "ilu-aveiro-00012",
+   "b": "ilu-aveiro-00015",
+   "family": "iluminacao",
+   "distance_m": 7.8,
+   "same_class": true,
+   "shared_image": false
+  }
+ ]
+}

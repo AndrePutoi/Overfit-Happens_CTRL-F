@@ -1,0 +1,59 @@
+{
+ "type": "object",
+ "required": [
+  "schema_version",
+  "decisions"
+ ],
+ "properties": {
+  "schema_version": {
+   "type": "string"
+  },
+  "decisions": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "element_id",
+     "decided_by",
+     "decided_at"
+    ],
+    "properties": {
+     "element_id": {
+      "type": "string"
+     },
+     "decided_by": {
+      "type": "string"
+     },
+     "decided_at": {
+      "type": "string"
+     },
+     "status": {
+      "enum": [
+       "validado",
+       "corrigido",
+       "rejeitado"
+      ]
+     },
+     "best_detection_id": {
+      "type": "string"
+     },
+     "merge_into": {
+      "type": "string"
+     },
+     "split_detection_ids": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     },
+     "class": {
+      "type": "string"
+     },
+     "note": {
+      "type": "string"
+     }
+    }
+   }
+  }
+ }
+}

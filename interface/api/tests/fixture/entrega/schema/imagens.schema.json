@@ -1,0 +1,83 @@
+{
+ "type": "array",
+ "items": {
+  "type": "object",
+  "required": [
+   "id",
+   "source",
+   "lat",
+   "lon",
+   "heading",
+   "width",
+   "height",
+   "license",
+   "attribution",
+   "path"
+  ],
+  "properties": {
+   "id": {
+    "type": "string"
+   },
+   "source": {
+    "type": "string"
+   },
+   "source_image_id": {
+    "type": "string"
+   },
+   "lat": {
+    "type": "number"
+   },
+   "lon": {
+    "type": "number"
+   },
+   "heading": {
+    "type": "number"
+   },
+   "hfov_deg": {
+    "type": [
+     "number",
+     "null"
+    ]
+   },
+   "camera_type": {
+    "type": "string"
+   },
+   "captured_at": {
+    "type": [
+     "string",
+     "null"
+    ]
+   },
+   "width": {
+    "type": "integer"
+   },
+   "height": {
+    "type": "integer"
+   },
+   "license": {
+    "type": "string"
+   },
+   "attribution": {
+    "type": "string"
+   },
+   "path": {
+    "type": [
+     "string",
+     "null"
+    ]
+   },
+   "pano_id": {
+    "type": [
+     "string",
+     "null"
+    ]
+   },
+   "yaw": {
+    "type": [
+     "number",
+     "null"
+    ]
+   }
+  }
+ }
+}

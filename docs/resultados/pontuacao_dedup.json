@@ -1,0 +1,371 @@
+{
+ "n": 766,
+ "mesmo": 310,
+ "pares_de_grupos": 388,
+ "sigma_modelo": {
+  "a_m": 0.5,
+  "b": 0.203,
+  "sigma_az_graus": 23.0
+ },
+ "k": {
+  "0.0": {
+   "AUC_so_distancia": 0.765,
+   "AUC_so_distancia/σ": 0.765,
+   "AUC_pontuacao_completa_VC": 0.86
+  },
+  "0.1": {
+   "AUC_so_distancia": 0.789,
+   "AUC_so_distancia/σ": 0.796,
+   "AUC_pontuacao_completa_VC": 0.874
+  },
+  "0.2": {
+   "AUC_so_distancia": 0.818,
+   "AUC_so_distancia/σ": 0.824,
+   "AUC_pontuacao_completa_VC": 0.888
+  },
+  "0.3": {
+   "AUC_so_distancia": 0.852,
+   "AUC_so_distancia/σ": 0.855,
+   "AUC_pontuacao_completa_VC": 0.913
+  },
+  "0.4": {
+   "AUC_so_distancia": 0.818,
+   "AUC_so_distancia/σ": 0.819,
+   "AUC_pontuacao_completa_VC": 0.907
+  },
+  "0.5": {
+   "AUC_so_distancia": 0.742,
+   "AUC_so_distancia/σ": 0.738,
+   "AUC_pontuacao_completa_VC": 0.861
+  },
+  "0.6": {
+   "AUC_so_distancia": 0.7,
+   "AUC_so_distancia/σ": 0.698,
+   "AUC_pontuacao_completa_VC": 0.835
+  },
+  "0.8": {
+   "AUC_so_distancia": 0.642,
+   "AUC_so_distancia/σ": 0.649,
+   "AUC_pontuacao_completa_VC": 0.795
+  },
+  "1.0": {
+   "AUC_so_distancia": 0.595,
+   "AUC_so_distancia/σ": 0.607,
+   "AUC_pontuacao_completa_VC": 0.774
+  }
+ },
+ "resultados": {
+  "aparencia | logistica": {
+   "AUC": 0.75,
+   "IC95": [
+    0.712,
+    0.784
+   ],
+   "AUC_so_estrato_aleatorio": 0.676,
+   "por_familia": {
+    "iluminacao": 0.978,
+    "mobiliario": 0.58,
+    "residuos": 0.632,
+    "sinal": 0.852
+   }
+  },
+  "aparencia | arvores": {
+   "AUC": 0.718,
+   "IC95": [
+    0.679,
+    0.753
+   ],
+   "AUC_so_estrato_aleatorio": 0.635,
+   "por_familia": {
+    "iluminacao": 0.924,
+    "mobiliario": 0.572,
+    "residuos": 0.583,
+    "sinal": 0.823
+   }
+  },
+  "base (aparencia + geometria bruta) | logistica": {
+   "AUC": 0.773,
+   "IC95": [
+    0.74,
+    0.805
+   ],
+   "AUC_so_estrato_aleatorio": 0.713,
+   "por_familia": {
+    "iluminacao": 0.924,
+    "mobiliario": 0.513,
+    "residuos": 0.649,
+    "sinal": 0.85
+   }
+  },
+  "base (aparencia + geometria bruta) | arvores": {
+   "AUC": 0.779,
+   "IC95": [
+    0.746,
+    0.812
+   ],
+   "AUC_so_estrato_aleatorio": 0.698,
+   "por_familia": {
+    "iluminacao": 0.804,
+    "mobiliario": 0.614,
+    "residuos": 0.566,
+    "sinal": 0.882
+   }
+  },
+  "+sigma | logistica": {
+   "AUC": 0.774,
+   "IC95": [
+    0.742,
+    0.807
+   ],
+   "AUC_so_estrato_aleatorio": 0.712,
+   "por_familia": {
+    "iluminacao": 0.938,
+    "mobiliario": 0.489,
+    "residuos": 0.65,
+    "sinal": 0.849
+   }
+  },
+  "+sigma | arvores": {
+   "AUC": 0.781,
+   "IC95": [
+    0.746,
+    0.813
+   ],
+   "AUC_so_estrato_aleatorio": 0.718,
+   "por_familia": {
+    "iluminacao": 0.902,
+    "mobiliario": 0.586,
+    "residuos": 0.585,
+    "sinal": 0.88
+   }
+  },
+  "+k=0.3 | logistica": {
+   "AUC": 0.913,
+   "IC95": [
+    0.891,
+    0.933
+   ],
+   "AUC_so_estrato_aleatorio": 0.893,
+   "por_familia": {
+    "iluminacao": 0.996,
+    "mobiliario": 0.871,
+    "residuos": 0.781,
+    "sinal": 0.966
+   }
+  },
+  "+k=0.3 | arvores": {
+   "AUC": 0.901,
+   "IC95": [
+    0.876,
+    0.921
+   ],
+   "AUC_so_estrato_aleatorio": 0.859,
+   "por_familia": {
+    "iluminacao": 0.92,
+    "mobiliario": 0.871,
+    "residuos": 0.743,
+    "sinal": 0.97
+   }
+  },
+  "+vistas | logistica": {
+   "AUC": 0.921,
+   "IC95": [
+    0.9,
+    0.939
+   ],
+   "AUC_so_estrato_aleatorio": 0.903,
+   "por_familia": {
+    "iluminacao": 0.982,
+    "mobiliario": 0.835,
+    "residuos": 0.813,
+    "sinal": 0.974
+   }
+  },
+  "+vistas | arvores": {
+   "AUC": 0.914,
+   "IC95": [
+    0.892,
+    0.934
+   ],
+   "AUC_so_estrato_aleatorio": 0.864,
+   "por_familia": {
+    "iluminacao": 0.897,
+    "mobiliario": 0.888,
+    "residuos": 0.793,
+    "sinal": 0.969
+   }
+  }
+ },
+ "k_escolhido": 0.3,
+ "fusao": {
+  "conjunto": "+vistas | logistica",
+  "nota": "limiar visto nos mesmos dados (otimista); amostra estratificada: precisões não são taxas reais",
+  "0.6": {
+   "pares": 265,
+   "precisao": 0.883,
+   "revocacao": 0.755,
+   "por_familia(n,precisao)": {
+    "iluminacao": [
+     12,
+     1.0
+    ],
+    "mobiliario": [
+     32,
+     0.781
+    ],
+    "residuos": [
+     55,
+     0.745
+    ],
+    "sinal": [
+     166,
+     0.94
+    ]
+   }
+  },
+  "0.7": {
+   "pares": 225,
+   "precisao": 0.911,
+   "revocacao": 0.661,
+   "por_familia(n,precisao)": {
+    "iluminacao": [
+     11,
+     1.0
+    ],
+    "mobiliario": [
+     24,
+     0.917
+    ],
+    "residuos": [
+     35,
+     0.714
+    ],
+    "sinal": [
+     155,
+     0.948
+    ]
+   }
+  },
+  "0.75": {
+   "pares": 214,
+   "precisao": 0.925,
+   "revocacao": 0.639,
+   "por_familia(n,precisao)": {
+    "iluminacao": [
+     11,
+     1.0
+    ],
+    "mobiliario": [
+     23,
+     0.913
+    ],
+    "residuos": [
+     28,
+     0.75
+    ],
+    "sinal": [
+     152,
+     0.954
+    ]
+   }
+  },
+  "0.8": {
+   "pares": 192,
+   "precisao": 0.953,
+   "revocacao": 0.59,
+   "por_familia(n,precisao)": {
+    "iluminacao": [
+     9,
+     1.0
+    ],
+    "mobiliario": [
+     22,
+     0.955
+    ],
+    "residuos": [
+     20,
+     0.9
+    ],
+    "sinal": [
+     141,
+     0.957
+    ]
+   }
+  },
+  "0.85": {
+   "pares": 168,
+   "precisao": 0.97,
+   "revocacao": 0.526,
+   "por_familia(n,precisao)": {
+    "iluminacao": [
+     9,
+     1.0
+    ],
+    "mobiliario": [
+     15,
+     1.0
+    ],
+    "residuos": [
+     16,
+     0.875
+    ],
+    "sinal": [
+     128,
+     0.977
+    ]
+   }
+  }
+ },
+ "calibracao": [
+  {
+   "p": "0.0-0.1",
+   "n": 253,
+   "frac_mesmo": 0.04
+  },
+  {
+   "p": "0.1-0.2",
+   "n": 95,
+   "frac_mesmo": 0.158
+  },
+  {
+   "p": "0.2-0.3",
+   "n": 41,
+   "frac_mesmo": 0.268
+  },
+  {
+   "p": "0.3-0.4",
+   "n": 45,
+   "frac_mesmo": 0.333
+  },
+  {
+   "p": "0.4-0.5",
+   "n": 40,
+   "frac_mesmo": 0.325
+  },
+  {
+   "p": "0.5-0.6",
+   "n": 27,
+   "frac_mesmo": 0.444
+  },
+  {
+   "p": "0.6-0.7",
+   "n": 40,
+   "frac_mesmo": 0.725
+  },
+  {
+   "p": "0.7-0.8",
+   "n": 33,
+   "frac_mesmo": 0.667
+  },
+  {
+   "p": "0.8-0.9",
+   "n": 53,
+   "frac_mesmo": 0.887
+  },
+  {
+   "p": "0.9-1.0",
+   "n": 139,
+   "frac_mesmo": 0.978
+  }
+ ]
+}

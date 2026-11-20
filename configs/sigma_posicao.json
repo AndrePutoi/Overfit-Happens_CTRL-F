@@ -1,0 +1,49 @@
+{
+ "n_obs": 5525,
+ "elementos": 878,
+ "sigma_az_graus": 23.0,
+ "along": {
+  "0-8 m": {
+   "n": 85,
+   "vies_mediano_m": -4.42,
+   "sigma_robusto_m": 1.79,
+   "sigma_rel": 0.262
+  },
+  "8-14 m": {
+   "n": 631,
+   "vies_mediano_m": -6.93,
+   "sigma_robusto_m": 2.45,
+   "sigma_rel": 0.213
+  },
+  "14-20 m": {
+   "n": 1096,
+   "vies_mediano_m": -10.37,
+   "sigma_robusto_m": 3.54,
+   "sigma_rel": 0.207
+  },
+  "20-28 m": {
+   "n": 1605,
+   "vies_mediano_m": -13.59,
+   "sigma_robusto_m": 5.62,
+   "sigma_rel": 0.234
+  },
+  "28-41 m": {
+   "n": 2108,
+   "vies_mediano_m": -19.26,
+   "sigma_robusto_m": 6.96,
+   "sigma_rel": 0.206
+  }
+ },
+ "lateral_residuo_triangulacao_(enviesado_para_baixo)": 0.35,
+ "modelo_along": {
+  "a_m": 0.5,
+  "b": 0.203
+ },
+ "exemplos_sigma_total_m": {
+  "d=5": 2.6,
+  "d=10": 4.9,
+  "d=20": 9.6,
+  "d=30": 14.3,
+  "d=40": 19.0
+ }
+}

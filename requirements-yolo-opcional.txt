@@ -1,0 +1,2 @@
+# OPCIONAL e fora da omissão: ultralytics (AGPL-3.0) só para o backend de privacidade `yolo` (UMS_PRIVACY_BACKEND=yolo) e para scripts/01_download_models.py. A pipeline não precisa dele.
+ultralytics==8.4.213

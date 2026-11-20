@@ -1,0 +1,47 @@
+# CTRL+F — arranque: docker compose up --build   (aplicação em http://localhost:5173)
+# Importar a entrega do pipeline (pasta dados/entrega): docker compose exec api python -m app.importar
+# Base limpa: docker compose down -v && docker compose up --build   (depois voltar a importar)
+services:
+  db:
+    build: ./db
+    environment:
+      POSTGRES_DB: ctrlf
+      POSTGRES_USER: ctrlf
+      POSTGRES_PASSWORD: ctrlf
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./db/init:/docker-entrypoint-initdb.d:ro   # esquema + configuração, só na 1.ª vez
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ctrlf -d ctrlf"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+
+  api:
+    build: ./api
+    environment:
+      DATABASE_URL: postgresql://ctrlf:ctrlf@db:5432/ctrlf
+      CORS_ORIGINS: http://localhost:5173,http://127.0.0.1:5173
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./shared:/app/shared:ro
+      - ./db/init:/app/db/init:ro   # usado pelos testes para criar a base de teste
+      - ./dados:/data/media         # entrega do pipeline (dados/entrega) servida em /media
+      - uploads:/data/uploads       # vídeos por processar
+    depends_on:
+      db:
+        condition: service_healthy
+
+  web:
+    build: ./web          # React + Vite + Leaflet, servido por nginx (que encaminha /api e /media para a API)
+    ports:
+      - "5173:80"
+    depends_on:
+      - api
+
+volumes:
+  pgdata:
+  uploads:

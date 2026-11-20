@@ -1,0 +1,9 @@
+{
+ "n_pares": 901,
+ "mesmo": 389,
+ "AUC_validacao_cruzada_agrupada": 0.922,
+ "k": 0.3,
+ "caracteristicas": "cos, log1p(inliers no objeto), log1p(dist), dist/σ, log(prof. média), log1p(Δrumo), catálogo-mesmo-elemento, família(3), nº vistas(min,max), log(lado mín.)",
+ "rondas": "1, 2 e 3 (diretos e grupos)",
+ "nota": "treinado com TODOS os rótulos; a estimativa honesta é a da ronda 3 com o modelo congelado (AUC 0,897)"
+}

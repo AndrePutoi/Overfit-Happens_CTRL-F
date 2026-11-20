@@ -1,0 +1,28 @@
+# Portão de ADMISSÃO de imagens (ingest/admissao.py): localização obrigatória + filtro de qualidade ANTES da anonimização.
+# Calibrado nas 1824 vistas de Aveiro e com desfoque sintético (docs/RELATORIO_DETECAO_PIPELINE.md §2.2).
+
+exigir_posicao: true          # sem lat/lon (do metadado ou do EXIF) a imagem é REJEITADA (sem_posicao)
+exigir_rumo: false            # sem rumo: aprovada COM AVISO e geolocalizavel=false (serve para deteção/treino, não para localizar)
+
+resolucao:
+  lado_menor_min: 480         # px, imagens planas
+  largura_min_panorama: 2000  # px, equirretangulares
+
+qualidade:
+  # Desfoque: Crété (2007), comparação com a imagem re-desfocada, medido a 800 px de largura na faixa central (20%-80% da altura).
+  # NÃO se usa a variância do Laplaciano: mede textura e condenava fachadas lisas nítidas (dava 14-60 em paredes caiadas).
+  # Nas 1824 vistas de Aveiro: 0,19-0,34 (p1-p99), máx 0,45; desfoque gaussiano s=1,5 -> ~0,48; movimento -> ~0,56; s=2,5 -> ~0,65.
+  desfoque_rejeitar: 0.40     # rejeita (desfocada): 2 de 1824 originais (0,11%)
+  desfoque_aviso: 0.36        # aviso (pouco_nitida)
+  brilho_min: 30              # média de cinzentos (0-255): abaixo = escura
+  brilho_max: 220             # acima = sobreexposta
+  contraste_min: 14           # desvio-padrão dos cinzentos: abaixo = tapada/uniforme (lente tapada, parede encostada)
+  saturacao_alta_max: 0.35    # fração de píxeis >= 250
+  saturacao_baixa_max: 0.50   # fração de píxeis <= 5
+
+# Caixas (S, O, N, E) para o aviso fora_da_zona quando se passa --zona <nome>
+zonas:
+  aveiro: [40.6405, -8.6560, 40.6460, -8.6440]      # zona piloto
+  aveiro_cidade: [40.60, -8.70, 40.68, -8.60]
+  porto: [41.12, -8.70, 41.20, -8.55]
+  lisboa: [38.68, -9.25, 38.82, -9.08]

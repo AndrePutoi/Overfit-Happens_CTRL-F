@@ -1,0 +1,7 @@
+Imagens de teste (uso local). Fonte: Wikimedia Commons.
+aveiro_1.jpg  File:Aveiro - Rua do Dr. Barbosa de Magalhaes.jpg  (CC BY-SA 4.0)
+aveiro_2.jpg  File:Rua João Mendonça, Aveiro.jpg  (CC BY 3.0)
+aveiro_3.jpg  File:Rua de Aveiro - Portugal.jpg  (CC BY-SA 4.0)
+aveiro_4.jpg  File:Casa da Cooperativa Agrícola em Aveiro na rua João Mendonça.jpg  (CC BY-SA 3.0)
+bus.jpg       Ultralytics (exemplo oficial)
+Autores: ver a página de cada ficheiro no Commons. Não incluir no repositório público sem atribuição.

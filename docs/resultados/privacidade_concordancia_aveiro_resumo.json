@@ -1,0 +1,23 @@
+{
+ "rostos": {
+  "caixas_yolo": 118,
+  "caixas_rfdetr": 110,
+  "so_yolo": 13,
+  "so_rfdetr": 5,
+  "% das caixas do YOLO que o RF-DETR cobre": 89.0,
+  "% das caixas do RF-DETR que o YOLO cobre": 95.5
+ },
+ "matriculas": {
+  "caixas_yolo": 69,
+  "caixas_rfdetr": 29,
+  "so_yolo": 64,
+  "so_rfdetr": 24,
+  "% das caixas do YOLO que o RF-DETR cobre": 7.2,
+  "% das caixas do RF-DETR que o YOLO cobre": 17.2
+ },
+ "_meta": {
+  "vistas_amostra": 150,
+  "segundos": 157.9,
+  "nota": "concordância, não exatidão"
+ }
+}

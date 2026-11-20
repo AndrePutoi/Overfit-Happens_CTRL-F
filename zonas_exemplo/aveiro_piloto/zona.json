@@ -1,0 +1,9 @@
+{
+  "nome": "aveiro_piloto",
+  "descricao": "Zona piloto do hackathon (Aveiro, centro). A caixa tem de ter menos de 0,01 graus de lado (limite da API do Mapillary). max_panoramas limita a primeira corrida a poucos minutos: tirar esse campo para a zona inteira.",
+  "bbox": [-8.6550, 40.6405, -8.6455, 40.6461],
+  "since": "2023-01-01",
+  "max": 200,
+  "max_panoramas": 25,
+  "stride": 1
+}

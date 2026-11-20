@@ -1,0 +1,72 @@
+{
+ "v1 (Lisboa)": {
+  "lisboa_v1_valid": {
+   "imagens": 38,
+   "caixas_gt": 76,
+   "deteccoes": 11400,
+   "mAP50-95": 0.3866,
+   "mAP50": 0.634,
+   "mAP50-95_por_classe": {
+    "candeeiro": 0.3703,
+    "poste_luz": 0.4029
+   }
+  },
+  "porto_valid": {
+   "imagens": 232,
+   "caixas_gt": 468,
+   "deteccoes": 69600,
+   "mAP50-95": 0.6987,
+   "mAP50": 0.799,
+   "mAP50-95_por_classe": {
+    "candeeiro": 0.615,
+    "poste_luz": 0.7824
+   }
+  },
+  "valid_v2_completa": {
+   "imagens": 270,
+   "caixas_gt": 544,
+   "deteccoes": 81000,
+   "mAP50-95": 0.6395,
+   "mAP50": 0.7717,
+   "mAP50-95_por_classe": {
+    "candeeiro": 0.5317,
+    "poste_luz": 0.7474
+   }
+  }
+ },
+ "v2 (Lisboa+Porto)": {
+  "lisboa_v1_valid": {
+   "imagens": 38,
+   "caixas_gt": 76,
+   "deteccoes": 11400,
+   "mAP50-95": 0.3833,
+   "mAP50": 0.6313,
+   "mAP50-95_por_classe": {
+    "candeeiro": 0.3762,
+    "poste_luz": 0.3904
+   }
+  },
+  "porto_valid": {
+   "imagens": 232,
+   "caixas_gt": 468,
+   "deteccoes": 69600,
+   "mAP50-95": 0.5567,
+   "mAP50": 0.7542,
+   "mAP50-95_por_classe": {
+    "candeeiro": 0.4693,
+    "poste_luz": 0.6441
+   }
+  },
+  "valid_v2_completa": {
+   "imagens": 270,
+   "caixas_gt": 544,
+   "deteccoes": 81000,
+   "mAP50-95": 0.5318,
+   "mAP50": 0.7393,
+   "mAP50-95_por_classe": {
+    "candeeiro": 0.4391,
+    "poste_luz": 0.6244
+   }
+  }
+ }
+}

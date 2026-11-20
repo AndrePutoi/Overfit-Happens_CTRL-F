@@ -1,0 +1,3 @@
+# Só para TREINAR (detection/training/*, scripts/lixo_v4_fila.sh): acrescenta aos requirements.txt.
+rfdetr[train,loggers]==1.12.1
+pycocotools==2.0.11

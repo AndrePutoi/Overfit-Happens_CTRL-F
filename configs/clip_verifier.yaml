@@ -1,0 +1,76 @@
+# Verificador CLIP: só verifica o que está listado em `labels` (tudo o resto passa como `fora_de_ambito`).
+# Âmbito atual: CONTENTORES e SUBTERRÂNEOS (só o que se parece com caixa elétrica) e SINAIS PADRÃO (regulamentação, perigo, informação).
+# Sem luzes, sem bancos, sem sinais de orientação/texto/turísticos (placas de orientação, painéis complementares).
+#
+# Para cada caixa: p_rejeitar = softmax([100*melhor_certa, 100*melhor_confusora])[confusora]. Estados:
+#   removido  p_rejeitar >= remover  E  lado >= lado_min_remover_px  E  a "segunda chave" confirma  E  (contentores) a caixa é clara (brilho_min_remover)
+#   suspeito  p_rejeitar >= suspeito E  a segunda chave não a protege  (sinal para o técnico)
+#   protegido o CLIP queria remover/sinalizar mas a segunda chave diz que é um objeto verdadeiro
+#   ok / fora_de_ambito
+# Segundas chaves (existem porque o CLIP sozinho removeu sinais e contentores verdadeiros; ver docs/VERIFICADOR_CLIP.md):
+#   sinal       a confiança do router de sinais (p_router, MTSD): removido só se p_router < 0.60; suspeito só se < 0.90
+#   contentor   o score do PRÓPRIO detetor de contentores: removido só se score < 0.60; suspeito só se < 0.80 (os ecopontos verdadeiros têm score alto; as caixas elétricas, baixo)
+#               (a semelhança a recortes já confirmados foi testada e NÃO separava caixas elétricas de ecopontos azuis: ver docs/VERIFICADOR_CLIP.md)
+modelo: openai/clip-vit-base-patch32
+margem_recorte: 0.15
+
+labels:
+  contentor:
+    remocao_automatica: false      # DECISÃO DO UTILIZADOR (2026-11-18): o CLIP só SINALIZA (`suspeito`); nunca remove sozinho. O que seria removido fica com `seria_removido: true`
+    limiares: {remover: 0.95, suspeito: 0.75}
+    lado_min_remover_px: 50
+    segunda_chave: {campo: score, remover_se_menor_que: 0.60, sinalizar_se_menor_que: 0.80}
+    brilho_min_remover: 100      # caixas escuras (caixotes pretos, papeleiras, ecopontos à sombra) ficam `protegidas`: eram objetos verdadeiros; as caixas elétricas removidas eram claras
+    certas:
+      - "a photo of a grey public litter bin with an opening on top, standing on a street"
+      - "a photo of a modern grey metal waste bin with a flap on a sidewalk"
+      - "a photo of a large dark blue recycling container with a round green or yellow opening on a street"
+      - "a photo of a large wheeled waste container with a hinged lid, used for street garbage collection"
+      - "a photo of a row of big recycling bins with colored lids on a city sidewalk"
+      - "a photo of a small litter bin attached to a pole on a sidewalk"
+      - "a photo of a cylindrical public rubbish bin on a street"
+      - "a photo of a big metal municipal waste container on the curb"
+    confusoras:
+      - "a photo of a grey metal electrical utility cabinet with a locked door on a sidewalk"
+      - "a photo of an electricity meter box or distribution cabinet fixed to a wall"
+      - "a photo of a telecommunications street cabinet"
+      - "a photo of an electrical fuse box or switchboard with a small door"
+  subterraneo:
+    remocao_automatica: false
+    limiares: {remover: 0.95, suspeito: 0.75}
+    lado_min_remover_px: 50
+    segunda_chave: {campo: score, remover_se_menor_que: 0.60, sinalizar_se_menor_que: 0.80}
+    brilho_min_remover: 100
+    certas:
+      - "a photo of a semi-underground waste container: a round drum with a lid flush with the pavement"
+      - "a photo of an underground recycling bin with a metal tower and a hopper on the sidewalk"
+      - "a photo of a round steel waste container with a lid sticking out of the paving"
+      - "a photo of a large dark blue recycling container with a round opening on a street"
+    confusoras:
+      - "a photo of a grey metal electrical utility cabinet with a locked door on a sidewalk"
+      - "a photo of an electricity meter box or distribution cabinet fixed to a wall"
+      - "a photo of a telecommunications street cabinet"
+  sinal:
+    remocao_automatica: false
+    familias: [regulamentacao, perigo, informacao]
+    limiares: {remover: 0.99, suspeito: 0.75}      # remover a 0.99 (não 0.95): os sinais verdadeiros que o CLIP queria tirar tinham 0.96-0.98 (sinais cortados/de lado); ficam como suspeito
+    lado_min_remover_px: 40
+    segunda_chave: {campo: p_router, remover_se_menor_que: 0.60, sinalizar_se_menor_que: 0.90}
+    certas:
+      - "a photo of a vertical road traffic sign mounted on a pole"
+      - "a photo of a round road sign with a red border and a blue center (no stopping or no parking)"
+      - "a photo of a white round road sign with a red ring and a speed limit number"
+      - "a photo of a triangular warning road sign with a red border"
+      - "a photo of a triangular yield road sign with a red border"
+      - "a photo of a blue square road sign with a white pictogram (parking or pedestrian crossing)"
+      - "a photo of a blue round road sign with a white arrow"
+      - "a photo of a red octagonal stop sign"
+    confusoras:
+      - "a photo of a person's hand holding a mobile phone"
+      - "a photo of a person's face, head or body"
+      - "a photo of a billboard, poster or banner"
+      - "a photo of a shop sign or advertising board on a building"
+      - "a photo of a window, door or plain wall"
+      - "a photo of a bicycle or a car"
+      - "a photo of tree branches and leaves"
+      - "a photo of a graffiti or a sticker on a wall"

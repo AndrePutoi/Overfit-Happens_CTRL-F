@@ -1,0 +1,19 @@
+{
+  "descricao": "Categorias de SINAIS que se ignoram por completo depois da deteção e da classificação (decisão do utilizador, 2026-11-20: em Aveiro quase só apanham lixo). Fonte única: lida pelo exportador (scripts/exportar_entrega.py --ignorar-sinais) e pela deteção de zona (scripts/detetar_zona.py).",
+  "grupos": ["orientacao_outros"],
+  "tipos": [
+    "complementary_tow_away_zone",
+    "complementary_chevron_left",
+    "complementary_chevron_right",
+    "complementary_chevron_right_unsure",
+    "complementary_trucks",
+    "complementary_trucks_turn_right"
+  ],
+  "nomes_pt": {
+    "orientacao_outros": "orientação e outros",
+    "complementary_tow_away_zone": "painel de reboque",
+    "complementary_chevron_left": "baliza de curva", "complementary_chevron_right": "baliza de curva", "complementary_chevron_right_unsure": "baliza de curva",
+    "complementary_trucks": "painel de veículos pesados", "complementary_trucks_turn_right": "painel de veículos pesados"
+  },
+  "nao_incluidos_por_decidir": ["complementary_obstacle_delineator (baliza de obstáculo, 2 em Aveiro)", "subclass desconhecido nos outros grupos (318 elementos em Aveiro)"]
+}

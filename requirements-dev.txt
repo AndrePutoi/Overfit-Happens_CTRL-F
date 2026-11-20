@@ -1,0 +1,2 @@
+# Testes do detetor de bancos (bench_detector/tests).
+pytest==9.2.0

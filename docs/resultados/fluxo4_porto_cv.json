@@ -1,0 +1,62 @@
+{
+ "modo": "cv",
+ "labels": [
+  "embalagens",
+  "indiferenciado",
+  "papel",
+  "vidro"
+ ],
+ "epocas": 10,
+ "n_recortes": 627,
+ "treino": "SÓ anotações do Porto (sem waste_container)",
+ "validacao_cruzada": {
+  "n": 627,
+  "acc": 0.518,
+  "acc_equilibrada": 0.473,
+  "recolha": {
+   "embalagens": 0.529,
+   "indiferenciado": 0.568,
+   "papel": 0.203,
+   "vidro": 0.593
+  },
+  "confusao(linhas=real)": [
+   [
+    54,
+    21,
+    6,
+    21
+   ],
+   [
+    56,
+    220,
+    35,
+    76
+   ],
+   [
+    16,
+    28,
+    16,
+    19
+   ],
+   [
+    12,
+    11,
+    1,
+    35
+   ]
+  ]
+ },
+ "acc_equilibrada_media_por_epoca": [
+  0.246,
+  0.262,
+  0.267,
+  0.277,
+  0.325,
+  0.379,
+  0.419,
+  0.394,
+  0.446,
+  0.467
+ ],
+ "nota": "dobras por PANORAMA (as 4 vistas e o mesmo local nunca ficam em lados diferentes); é a exatidão esperada em imagens novas do Porto, não de outras cidades"
+}

@@ -1,0 +1,96 @@
+{
+ "type": "array",
+ "items": {
+  "type": "object",
+  "required": [
+   "id",
+   "image_id",
+   "family",
+   "class",
+   "score",
+   "bbox",
+   "quality",
+   "element_id",
+   "in_catalog",
+   "excluded_reason",
+   "crop_path"
+  ],
+  "properties": {
+   "id": {
+    "type": "string"
+   },
+   "image_id": {
+    "type": "string"
+   },
+   "family": {
+    "type": "string"
+   },
+   "class": {
+    "type": "string"
+   },
+   "subtype": {
+    "type": [
+     "string",
+     "null"
+    ]
+   },
+   "score": {
+    "type": "number"
+   },
+   "bbox": {
+    "type": "array",
+    "items": {
+     "type": "number"
+    },
+    "minItems": 4,
+    "maxItems": 4
+   },
+   "quality": {
+    "type": "number"
+   },
+   "azimuth": {
+    "type": [
+     "number",
+     "null"
+    ]
+   },
+   "est_distance": {
+    "type": [
+     "number",
+     "null"
+    ]
+   },
+   "element_id": {
+    "type": [
+     "string",
+     "null"
+    ]
+   },
+   "in_catalog": {
+    "type": "boolean"
+   },
+   "excluded_reason": {
+    "enum": [
+     null,
+     "papeleira_filter",
+     "catalog_filter"
+    ]
+   },
+   "suggested_class": {
+    "type": [
+     "string",
+     "null"
+    ]
+   },
+   "crop_path": {
+    "type": [
+     "string",
+     "null"
+    ]
+   },
+   "extra": {
+    "type": "object"
+   }
+  }
+ }
+}

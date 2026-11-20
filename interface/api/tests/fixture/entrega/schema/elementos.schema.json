@@ -1,0 +1,200 @@
+{
+ "type": "object",
+ "required": [
+  "type",
+  "features"
+ ],
+ "properties": {
+  "type": {
+   "const": "FeatureCollection"
+  },
+  "features": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "type",
+     "geometry",
+     "properties"
+    ],
+    "properties": {
+     "type": {
+      "const": "Feature"
+     },
+     "geometry": {
+      "type": "object",
+      "required": [
+       "type",
+       "coordinates"
+      ],
+      "properties": {
+       "type": {
+        "const": "Point"
+       },
+       "coordinates": {
+        "type": "array",
+        "items": {
+         "type": "number"
+        },
+        "minItems": 2,
+        "maxItems": 2
+       }
+      }
+     },
+     "properties": {
+      "type": "object",
+      "required": [
+       "id",
+       "family",
+       "class",
+       "confidence",
+       "n_views",
+       "status",
+       "geo_method",
+       "position_reliable",
+       "position_original",
+       "observations",
+       "best_detection_id",
+       "duplicate_group_id"
+      ],
+      "properties": {
+       "id": {
+        "type": "string"
+       },
+       "family": {
+        "enum": [
+         "sinal",
+         "iluminacao",
+         "residuos"
+        ]
+       },
+       "class": {
+        "type": "string"
+       },
+       "subclass": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "confidence": {
+        "type": "number"
+       },
+       "n_views": {
+        "type": "integer"
+       },
+       "status": {
+        "enum": [
+         "auto",
+         "validado",
+         "corrigido",
+         "rejeitado"
+        ]
+       },
+       "geo_method": {
+        "type": "string"
+       },
+       "geo_residual": {
+        "type": [
+         "number",
+         "null"
+        ]
+       },
+       "position_reliable": {
+        "type": "boolean"
+       },
+       "position_original": {
+        "type": "object",
+        "required": [
+         "lat",
+         "lon"
+        ],
+        "properties": {
+         "lat": {
+          "type": "number"
+         },
+         "lon": {
+          "type": "number"
+         }
+        }
+       },
+       "road_adjustment_m": {
+        "type": [
+         "number",
+         "null"
+        ]
+       },
+       "road_adjustment_method": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "n_units": {
+        "type": [
+         "integer",
+         "null"
+        ]
+       },
+       "osm_ref_match": {
+        "type": [
+         "boolean",
+         "null"
+        ]
+       },
+       "observations": {
+        "type": "array",
+        "items": {
+         "type": "object",
+         "required": [
+          "detection_id",
+          "image_id",
+          "bbox",
+          "score",
+          "quality",
+          "rank"
+         ],
+         "properties": {
+          "detection_id": {
+           "type": "string"
+          },
+          "image_id": {
+           "type": "string"
+          },
+          "bbox": {
+           "type": "array",
+           "items": {
+            "type": "number"
+           },
+           "minItems": 4,
+           "maxItems": 4
+          },
+          "score": {
+           "type": "number"
+          },
+          "quality": {
+           "type": "number"
+          },
+          "rank": {
+           "type": "integer"
+          }
+         }
+        },
+        "minItems": 1
+       },
+       "best_detection_id": {
+        "type": "string"
+       },
+       "duplicate_group_id": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

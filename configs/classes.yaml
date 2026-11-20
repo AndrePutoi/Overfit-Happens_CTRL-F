@@ -1,0 +1,43 @@
+# ============================================================
+# FICHEIRO DE CLASSES PARTILHADO (A, B e C).  Fonte única de verdade.
+# Mudanças: combinar os três, alterar aqui, avisar no grupo.
+# ============================================================
+
+# --- Estágio 1: o que o DETETOR (RF-DETR / YOLO) devolve -----------------
+# Poucas classes grossas = converge com poucos dados.
+# O id é a posição na lista (0, 1, 2, 3).  NÃO reordenar depois de treinar.
+detector_classes:
+  - sinal          # qualquer sinal vertical de trânsito
+  - candeeiro      # candeeiro (já com poste, se tiver luminária)
+  - poste          # poste SEM luminária (poste elétrico, telecom, etc.)
+  - contentor      # contentor / ecoponto (qualquer tipo)
+  - Buraco/lomba da Estrada
+
+# --- Estágio 2: sub-classificadores sobre o RECORTE da caixa -------------
+# Cada detetor grosso tem (opcionalmente) um classificador de tipo.
+subclassifiers:
+  sinal:
+    - stop
+    - cedencia
+    - limite_velocidade
+    - outro
+  contentor:
+    - subterraneo
+    - ilha_reciclagem
+    - indiferenciado
+  # candeeiro e poste não têm subclasse.
+
+# --- Família (coluna `family` da tabela `element`, secção 9 do plano) ------
+family_of:
+  sinal: sinal
+  candeeiro: iluminacao
+  poste: iluminacao
+  contentor: residuos
+
+# --- Mapeamento MTSD -> subclasse de sinal --------------------------------
+# Chaves = prefixo do rótulo MTSD (label.startswith).  Tudo o que não bater
+# em nada fica "outro".  Confirmar os nomes exatos depois de descarregar.
+mtsd_to_sign_subclass:
+  "regulatory--stop--": stop
+  "regulatory--yield--": cedencia
+  "regulatory--maximum-speed-limit-": limite_velocidade

@@ -1,0 +1,502 @@
+{
+ "type": "FeatureCollection",
+ "name": "fixture",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.6535701,
+     40.6428053
+    ]
+   },
+   "properties": {
+    "id": "sin-aveiro-00160",
+    "family": "sinal",
+    "class": "sinal",
+    "subclass": "regulatory_stop",
+    "confidence": 0.61,
+    "n_views": 2,
+    "status": "auto",
+    "geo_method": "triangulado",
+    "geo_residual": 0.0,
+    "position_reliable": true,
+    "position_original": {
+     "lat": 40.6428053,
+     "lon": -8.6535701
+    },
+    "road_adjustment_m": 0.0,
+    "road_adjustment_method": "triangulado_mantido",
+    "n_units": null,
+    "osm_ref_match": null,
+    "observations": [
+     {
+      "detection_id": "det-sn-00426",
+      "image_id": "1518690156666348_y180",
+      "bbox": [
+       289.3,
+       479.1,
+       325.7,
+       517.2
+      ],
+      "score": 0.396,
+      "quality": 0.1832,
+      "rank": 1
+     },
+     {
+      "detection_id": "det-sn-00055",
+      "image_id": "1034058619154473_y180",
+      "bbox": [
+       382.2,
+       473.3,
+       415.9,
+       510.4
+      ],
+      "score": 0.354,
+      "quality": 0.1687,
+      "rank": 2
+     }
+    ],
+    "best_detection_id": "det-sn-00426",
+    "duplicate_group_id": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.653121,
+     40.6412243
+    ]
+   },
+   "properties": {
+    "id": "sin-aveiro-00001",
+    "family": "sinal",
+    "class": "sinal",
+    "subclass": "orientacao_outros",
+    "confidence": 0.545,
+    "n_views": 1,
+    "status": "auto",
+    "geo_method": "vista_unica_profundidade",
+    "geo_residual": null,
+    "position_reliable": false,
+    "position_original": {
+     "lat": 40.6412245,
+     "lon": -8.6531211
+    },
+    "road_adjustment_m": 0.0,
+    "road_adjustment_method": "ja_no_corredor",
+    "n_units": null,
+    "osm_ref_match": null,
+    "observations": [
+     {
+      "detection_id": "det-sn-00910",
+      "image_id": "36386776244254188_y180",
+      "bbox": [
+       1121.8,
+       377.2,
+       1248.5,
+       459.1
+      ],
+      "score": 0.908,
+      "quality": 0.6665,
+      "rank": 1
+     }
+    ],
+    "best_detection_id": "det-sn-00910",
+    "duplicate_group_id": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.6543633,
+     40.6413813
+    ]
+   },
+   "properties": {
+    "id": "sin-aveiro-00002",
+    "family": "sinal",
+    "class": "sinal",
+    "subclass": "desconhecido",
+    "confidence": 0.306,
+    "n_views": 1,
+    "status": "auto",
+    "geo_method": "vista_unica_profundidade",
+    "geo_residual": null,
+    "position_reliable": false,
+    "position_original": {
+     "lat": 40.6413817,
+     "lon": -8.6543635
+    },
+    "road_adjustment_m": 0.0,
+    "road_adjustment_method": "mantido:mais_longe",
+    "n_units": null,
+    "osm_ref_match": null,
+    "observations": [
+     {
+      "detection_id": "det-sn-00111",
+      "image_id": "1164265129290855_y180",
+      "bbox": [
+       311.7,
+       209.3,
+       487.9,
+       505.2
+      ],
+      "score": 0.51,
+      "quality": 0.4473,
+      "rank": 1
+     }
+    ],
+    "best_detection_id": "det-sn-00111",
+    "duplicate_group_id": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.6550529,
+     40.6423749
+    ]
+   },
+   "properties": {
+    "id": "ilu-aveiro-00012",
+    "family": "iluminacao",
+    "class": "poste_luz",
+    "subclass": null,
+    "confidence": 0.225,
+    "n_views": 1,
+    "status": "auto",
+    "geo_method": "vista_unica_profundidade",
+    "geo_residual": null,
+    "position_reliable": false,
+    "position_original": {
+     "lat": 40.6423748,
+     "lon": -8.6550529
+    },
+    "road_adjustment_m": 0.0,
+    "road_adjustment_method": "mantido:mais_longe",
+    "n_units": null,
+    "osm_ref_match": false,
+    "observations": [
+     {
+      "detection_id": "det-lz-00063",
+      "image_id": "1161495206233348_y0",
+      "bbox": [
+       478.3,
+       381.3,
+       502.3,
+       500.7
+      ],
+      "score": 0.356,
+      "quality": 0.2704,
+      "rank": 1
+     },
+     {
+      "detection_id": "det-lz-00062",
+      "image_id": "1161495206233348_y0",
+      "bbox": [
+       449.6,
+       382.0,
+       473.1,
+       484.1
+      ],
+      "score": 0.375,
+      "quality": 0.2547,
+      "rank": 2
+     }
+    ],
+    "best_detection_id": "det-lz-00063",
+    "duplicate_group_id": "dup-lz-0001"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.6550759,
+     40.6424429
+    ]
+   },
+   "properties": {
+    "id": "ilu-aveiro-00015",
+    "family": "iluminacao",
+    "class": "poste_luz",
+    "subclass": null,
+    "confidence": 0.205,
+    "n_views": 1,
+    "status": "auto",
+    "geo_method": "vista_unica_profundidade",
+    "geo_residual": null,
+    "position_reliable": false,
+    "position_original": {
+     "lat": 40.6424123,
+     "lon": -8.6550657
+    },
+    "road_adjustment_m": 3.5,
+    "road_adjustment_method": "estrada",
+    "n_units": null,
+    "osm_ref_match": true,
+    "observations": [
+     {
+      "detection_id": "det-lz-00217",
+      "image_id": "1732596767844792_y180",
+      "bbox": [
+       205.5,
+       377.2,
+       224.8,
+       515.0
+      ],
+      "score": 0.341,
+      "quality": 0.1987,
+      "rank": 1
+     }
+    ],
+    "best_detection_id": "det-lz-00217",
+    "duplicate_group_id": "dup-lz-0001"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.6534607,
+     40.6416877
+    ]
+   },
+   "properties": {
+    "id": "ilu-aveiro-00001",
+    "family": "iluminacao",
+    "class": "poste_luz",
+    "subclass": null,
+    "confidence": 0.186,
+    "n_views": 1,
+    "status": "auto",
+    "geo_method": "vista_unica_profundidade",
+    "geo_residual": null,
+    "position_reliable": false,
+    "position_original": {
+     "lat": 40.6416878,
+     "lon": -8.6534604
+    },
+    "road_adjustment_m": 0.0,
+    "road_adjustment_method": "mantido:mais_longe",
+    "n_units": null,
+    "osm_ref_match": false,
+    "observations": [
+     {
+      "detection_id": "det-lz-00135",
+      "image_id": "1436380111878678_y180",
+      "bbox": [
+       396.6,
+       228.8,
+       423.7,
+       395.3
+      ],
+      "score": 0.31,
+      "quality": 0.2695,
+      "rank": 1
+     }
+    ],
+    "best_detection_id": "det-lz-00135",
+    "duplicate_group_id": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.6534684,
+     40.6410412
+    ]
+   },
+   "properties": {
+    "id": "res-aveiro-00001",
+    "family": "residuos",
+    "class": "contentor",
+    "subclass": null,
+    "confidence": 0.549,
+    "n_views": 1,
+    "status": "auto",
+    "geo_method": "vista_unica_profundidade",
+    "geo_residual": null,
+    "position_reliable": false,
+    "position_original": {
+     "lat": 40.6410409,
+     "lon": -8.6534683
+    },
+    "road_adjustment_m": 0.0,
+    "road_adjustment_method": "mantido:mais_longe",
+    "n_units": 1,
+    "osm_ref_match": false,
+    "observations": [
+     {
+      "detection_id": "det-rs-00419",
+      "image_id": "36386776244254188_y270",
+      "bbox": [
+       1089.8,
+       588.8,
+       1181.8,
+       731.6
+      ],
+      "score": 0.915,
+      "quality": 0.6949,
+      "rank": 1
+     }
+    ],
+    "best_detection_id": "det-rs-00419",
+    "duplicate_group_id": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.648324,
+     40.6426812
+    ]
+   },
+   "properties": {
+    "id": "sin-aveiro-00113",
+    "family": "sinal",
+    "class": "sinal",
+    "subclass": "regulatory_yield",
+    "confidence": 0.55,
+    "n_views": 1,
+    "status": "auto",
+    "geo_method": "vista_unica_profundidade",
+    "geo_residual": null,
+    "position_reliable": false,
+    "position_original": {
+     "lat": 40.6426423,
+     "lon": -8.6483294
+    },
+    "road_adjustment_m": 4.3,
+    "road_adjustment_method": "estrada",
+    "n_units": null,
+    "osm_ref_match": null,
+    "observations": [
+     {
+      "detection_id": "det-sn-00811",
+      "image_id": "26753247417650717_y270",
+      "bbox": [
+       950.8,
+       479.0,
+       1022.9,
+       538.7
+      ],
+      "score": 0.917,
+      "quality": 0.7475,
+      "rank": 1
+     }
+    ],
+    "best_detection_id": "det-sn-00811",
+    "duplicate_group_id": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.6502578,
+     40.6421899
+    ]
+   },
+   "properties": {
+    "id": "res-aveiro-00007",
+    "family": "residuos",
+    "class": "subterraneo",
+    "subclass": null,
+    "confidence": 0.485,
+    "n_views": 1,
+    "status": "auto",
+    "geo_method": "vista_unica_profundidade",
+    "geo_residual": null,
+    "position_reliable": false,
+    "position_original": {
+     "lat": 40.642161,
+     "lon": -8.650233
+    },
+    "road_adjustment_m": 3.8,
+    "road_adjustment_method": "estrada",
+    "n_units": 1,
+    "osm_ref_match": false,
+    "observations": [
+     {
+      "detection_id": "det-rs-00179",
+      "image_id": "1558675795669784_y90",
+      "bbox": [
+       862.0,
+       410.6,
+       1024.7,
+       508.1
+      ],
+      "score": 0.809,
+      "quality": 0.5287,
+      "rank": 1
+     }
+    ],
+    "best_detection_id": "det-rs-00179",
+    "duplicate_group_id": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.6544778,
+     40.6415817
+    ]
+   },
+   "properties": {
+    "id": "ilu-aveiro-00002",
+    "family": "iluminacao",
+    "class": "candeeiro",
+    "subclass": null,
+    "confidence": 0.207,
+    "n_views": 1,
+    "status": "auto",
+    "geo_method": "vista_unica_profundidade",
+    "geo_residual": null,
+    "position_reliable": false,
+    "position_original": {
+     "lat": 40.6416979,
+     "lon": -8.6545824
+    },
+    "road_adjustment_m": 15.7,
+    "road_adjustment_method": "estrada",
+    "n_units": null,
+    "osm_ref_match": false,
+    "observations": [
+     {
+      "detection_id": "det-lz-00064",
+      "image_id": "1164265129290855_y0",
+      "bbox": [
+       139.1,
+       98.1,
+       203.5,
+       500.1
+      ],
+      "score": 0.345,
+      "quality": 0.2449,
+      "rank": 1
+     }
+    ],
+    "best_detection_id": "det-lz-00064",
+    "duplicate_group_id": null
+   }
+  }
+ ]
+}

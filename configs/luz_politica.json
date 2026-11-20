@@ -1,0 +1,4 @@
+{
+  "_nota": "Política de pré-anotação de luz por NOME da pasta de saída (dst.name). Lida por detection/annotation/preannotate_luz.py; sobrepõe-se aos argumentos. Lisboa: só candeeiros (decorativos, raros); os poste_luz ignoram-se porque o Porto já dá o suficiente. pc_min = p_candeeiro mínimo para ficar como POSSÍVEL candeeiro (mesmo que o CLIP prefira poste_luz); conf e reject mais brandos para não perder candeeiros.",
+  "lisboa": {"so_candeeiro": true, "pc_min": 0.25, "conf": 0.2, "reject": 0.7}
+}

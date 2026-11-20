@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ctrlf"
+version = "0.1.0"
+description = "Ctrl+F: deteção e geolocalização de mobiliário urbano (sinais, contentores, luz, bancos) a partir de imagens de rua, por zona e de forma retomável."
+readme = "README.md"
+requires-python = ">=3.12"
+# A instalação completa (PyTorch com CUDA, rfdetr, transformers...) faz-se com requirements.txt; ver o README, passo 2.
+dependencies = ["numpy", "pillow"]
+
+[project.optional-dependencies]
+completo = ["torch", "torchvision", "transformers", "rfdetr", "opencv-python-headless", "scipy", "scikit-learn", "joblib", "pyyaml"]
+
+[project.scripts]
+ctrlf = "ctrlf.urban_mobile_search.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"ctrlf.urban_mobile_search" = ["py.typed"]

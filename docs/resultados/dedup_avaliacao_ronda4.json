@@ -1,0 +1,181 @@
+{
+ "respondidos": 356,
+ "total": 356,
+ "atencao": {
+  "controlo_igual": {
+   "n": 3,
+   "certas": 3
+  },
+  "controlo_longe": {
+   "n": 3,
+   "certas": 3
+  },
+  "repeticoes": {
+   "n": 6,
+   "iguais": 6
+  }
+ },
+ "nao_sei": 0,
+ "por_estrato(mesmo,n)": {
+  "baixo": {
+   "mesmo": 7,
+   "n": 40,
+   "fracao": 0.175,
+   "IC95": [
+    0.087,
+    0.32
+   ]
+  },
+  "possivel_contentor": {
+   "mesmo": 36,
+   "n": 40,
+   "fracao": 0.9,
+   "IC95": [
+    0.769,
+    0.96
+   ]
+  },
+  "possivel_sinal": {
+   "mesmo": 50,
+   "n": 60,
+   "fracao": 0.833,
+   "IC95": [
+    0.72,
+    0.907
+   ]
+  },
+  "provavel_contentor": {
+   "mesmo": 34,
+   "n": 35,
+   "fracao": 0.971,
+   "IC95": [
+    0.855,
+    0.995
+   ]
+  },
+  "provavel_outros": {
+   "mesmo": 24,
+   "n": 24,
+   "fracao": 1.0,
+   "IC95": [
+    0.862,
+    1.0
+   ]
+  },
+  "provavel_sinal": {
+   "mesmo": 79,
+   "n": 80,
+   "fracao": 0.988,
+   "IC95": [
+    0.933,
+    0.998
+   ]
+  },
+  "quase_contentor": {
+   "mesmo": 17,
+   "n": 25,
+   "fracao": 0.68,
+   "IC95": [
+    0.484,
+    0.828
+   ]
+  },
+  "quase_sinal": {
+   "mesmo": 16,
+   "n": 40,
+   "fracao": 0.4,
+   "IC95": [
+    0.263,
+    0.554
+   ]
+  }
+ },
+ "AUC_p_no_nivel_do_elemento": {
+  "todos": 0.898,
+  "mobiliario": 1.0,
+  "residuos": 0.828,
+  "sinal": 0.898
+ },
+ "calibracao_(estratificada)": [
+  {
+   "p": "0.10-0.30",
+   "n": 40,
+   "fracao_mesmo": 0.175
+  },
+  {
+   "p": "0.30-0.50",
+   "n": 65,
+   "fracao_mesmo": 0.508
+  },
+  {
+   "p": "0.50-0.70",
+   "n": 33,
+   "fracao_mesmo": 0.758
+  },
+  {
+   "p": "0.70-0.85",
+   "n": 70,
+   "fracao_mesmo": 0.914
+  },
+  {
+   "p": "0.85-0.95",
+   "n": 62,
+   "fracao_mesmo": 0.984
+  },
+  {
+   "p": "0.95-1.00",
+   "n": 74,
+   "fracao_mesmo": 0.986
+  }
+ ],
+ "decisao_fusao_automatica (n>=30 e limite inferior >= 0,85, nivel provavel)": {
+  "sinais": {
+   "n": 80,
+   "mesmo": 79,
+   "IC95": [
+    0.933,
+    0.998
+   ],
+   "fusao_automatica_defensavel": true
+  },
+  "contentores (ilha)": {
+   "n": 35,
+   "mesmo": 34,
+   "IC95": [
+    0.855,
+    0.995
+   ],
+   "fusao_automatica_defensavel": true
+  },
+  "luz+bancos": {
+   "n": 24,
+   "mesmo": 24,
+   "IC95": [
+    0.862,
+    1.0
+   ],
+   "fusao_automatica_defensavel": false
+  }
+ },
+ "objetos_unicos_estimados": {
+  "elementos_no_catalogo": 4120,
+  "estimativa": 2542,
+  "intervalo_aprox": [
+   2500,
+   2663
+  ],
+  "reducao_se_fundir_provavel": {
+   "iluminacao": 10,
+   "mobiliario": 30,
+   "residuos": 40,
+   "sinal": 1174
+  },
+  "reducao_adicional_se_fundir_possivel": {
+   "iluminacao": 2,
+   "mobiliario": 12,
+   "residuos": 75,
+   "sinal": 327
+  },
+  "nota": "um par por grupo; IC só da precisão; luz e bancos usam a precisão do conjunto «outros»; sem erro de falsos negativos (duplicados que não foram recomendados)"
+ }
+}

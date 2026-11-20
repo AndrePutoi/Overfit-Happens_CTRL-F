@@ -1,0 +1,65 @@
+{
+ "rostos": {
+  "backend": "yolo",
+  "alvo": "rostos",
+  "imagens_positivas": 300,
+  "objetos": 891,
+  "recall_geral": 0.9024,
+  "recall_por_tamanho": {
+   "<16 px": {
+    "protegidos": 33,
+    "total": 36,
+    "recall": 0.9167
+   },
+   "16-40 px": {
+    "protegidos": 330,
+    "total": 346,
+    "recall": 0.9538
+   },
+   ">40 px": {
+    "protegidos": 441,
+    "total": 509,
+    "recall": 0.8664
+   }
+  },
+  "caixas_por_imagem_positiva": 4.33,
+  "area_desfocada_positivas_%": 7.07,
+  "imagens_negativas": 75,
+  "falsos_positivos_por_imagem_negativa": 0.64,
+  "imagens_negativas_com_alguma_caixa_%": 30.7,
+  "area_desfocada_negativas_%": 2.272,
+  "segundos": 81.2
+ },
+ "matriculas": {
+  "backend": "yolo",
+  "alvo": "matriculas",
+  "imagens_positivas": 300,
+  "objetos": 413,
+  "recall_geral": 0.3753,
+  "recall_por_tamanho": {
+   "<16 px": {
+    "protegidos": 48,
+    "total": 82,
+    "recall": 0.5854
+   },
+   "16-40 px": {
+    "protegidos": 45,
+    "total": 86,
+    "recall": 0.5233
+   },
+   ">40 px": {
+    "protegidos": 62,
+    "total": 245,
+    "recall": 0.2531
+   }
+  },
+  "caixas_por_imagem_positiva": 0.88,
+  "area_desfocada_positivas_%": 0.98,
+  "imagens_negativas": 75,
+  "falsos_positivos_por_imagem_negativa": 0.373,
+  "imagens_negativas_com_alguma_caixa_%": 29.3,
+  "area_desfocada_negativas_%": 0.373,
+  "segundos": 134.8
+ },
+ "_nota": "Open Images (teste). Etiquetas incompletas: só os falsos positivos nas imagens NEGATIVAS são fiáveis. Não é Aveiro."
+}

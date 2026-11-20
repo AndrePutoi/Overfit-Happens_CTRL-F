@@ -1,0 +1,409 @@
+[
+ {
+  "id": "det-lz-00062",
+  "image_id": "1161495206233348_y0",
+  "family": "iluminacao",
+  "class": "poste_luz",
+  "subtype": null,
+  "score": 0.375,
+  "bbox": [
+   449.6,
+   382.0,
+   473.1,
+   484.1
+  ],
+  "quality": 0.2547,
+  "azimuth": 349.0,
+  "est_distance": 9.5,
+  "element_id": "ilu-aveiro-00012",
+  "in_catalog": true,
+  "excluded_reason": null,
+  "suggested_class": null,
+  "crop_path": "recortes/det-lz-00062.jpg",
+  "extra": {
+   "p_simples": 0.431,
+   "p_decorativo": 0.09,
+   "p_rejeitar": 0.479
+  }
+ },
+ {
+  "id": "det-lz-00063",
+  "image_id": "1161495206233348_y0",
+  "family": "iluminacao",
+  "class": "poste_luz",
+  "subtype": null,
+  "score": 0.356,
+  "bbox": [
+   478.3,
+   381.3,
+   502.3,
+   500.7
+  ],
+  "quality": 0.2704,
+  "azimuth": 352.6,
+  "est_distance": 9.5,
+  "element_id": "ilu-aveiro-00012",
+  "in_catalog": true,
+  "excluded_reason": null,
+  "suggested_class": null,
+  "crop_path": "recortes/det-lz-00063.jpg",
+  "extra": {
+   "p_simples": 0.855,
+   "p_decorativo": 0.013,
+   "p_rejeitar": 0.132
+  }
+ },
+ {
+  "id": "det-lz-00064",
+  "image_id": "1164265129290855_y0",
+  "family": "iluminacao",
+  "class": "candeeiro",
+  "subtype": null,
+  "score": 0.345,
+  "bbox": [
+   139.1,
+   98.1,
+   203.5,
+   500.1
+  ],
+  "quality": 0.2449,
+  "azimuth": 326.0,
+  "est_distance": 28.4,
+  "element_id": "ilu-aveiro-00002",
+  "in_catalog": true,
+  "excluded_reason": null,
+  "suggested_class": null,
+  "crop_path": "recortes/det-lz-00064.jpg",
+  "extra": {
+   "p_simples": 0.18,
+   "p_decorativo": 0.489,
+   "p_rejeitar": 0.332
+  }
+ },
+ {
+  "id": "det-lz-00135",
+  "image_id": "1436380111878678_y180",
+  "family": "iluminacao",
+  "class": "poste_luz",
+  "subtype": null,
+  "score": 0.31,
+  "bbox": [
+   396.6,
+   228.8,
+   423.7,
+   395.3
+  ],
+  "quality": 0.2695,
+  "azimuth": 87.1,
+  "est_distance": 35.0,
+  "element_id": "ilu-aveiro-00001",
+  "in_catalog": true,
+  "excluded_reason": null,
+  "suggested_class": null,
+  "crop_path": "recortes/det-lz-00135.jpg",
+  "extra": {
+   "p_simples": 0.564,
+   "p_decorativo": 0.02,
+   "p_rejeitar": 0.416
+  }
+ },
+ {
+  "id": "det-lz-00217",
+  "image_id": "1732596767844792_y180",
+  "family": "iluminacao",
+  "class": "poste_luz",
+  "subtype": null,
+  "score": 0.341,
+  "bbox": [
+   205.5,
+   377.2,
+   224.8,
+   515.0
+  ],
+  "quality": 0.1987,
+  "azimuth": 166.0,
+  "est_distance": 26.8,
+  "element_id": "ilu-aveiro-00015",
+  "in_catalog": true,
+  "excluded_reason": null,
+  "suggested_class": null,
+  "crop_path": "recortes/det-lz-00217.jpg",
+  "extra": {
+   "p_simples": 0.542,
+   "p_decorativo": 0.036,
+   "p_rejeitar": 0.422
+  }
+ },
+ {
+  "id": "det-rs-00179",
+  "image_id": "1558675795669784_y90",
+  "family": "residuos",
+  "class": "subterraneo",
+  "subtype": null,
+  "score": 0.809,
+  "bbox": [
+   862.0,
+   410.6,
+   1024.7,
+   508.1
+  ],
+  "quality": 0.5287,
+  "azimuth": 147.0,
+  "est_distance": 30.5,
+  "element_id": "res-aveiro-00007",
+  "in_catalog": true,
+  "excluded_reason": null,
+  "suggested_class": null,
+  "crop_path": "recortes/det-rs-00179.jpg",
+  "extra": {}
+ },
+ {
+  "id": "det-rs-00419",
+  "image_id": "36386776244254188_y270",
+  "family": "residuos",
+  "class": "contentor",
+  "subtype": null,
+  "score": 0.915,
+  "bbox": [
+   1089.8,
+   588.8,
+   1181.8,
+   731.6
+  ],
+  "quality": 0.6949,
+  "azimuth": 167.6,
+  "est_distance": 15.2,
+  "element_id": "res-aveiro-00001",
+  "in_catalog": true,
+  "excluded_reason": null,
+  "suggested_class": null,
+  "crop_path": "recortes/det-rs-00419.jpg",
+  "extra": {}
+ },
+ {
+  "id": "det-sn-00055",
+  "image_id": "1034058619154473_y180",
+  "family": "sinal",
+  "class": "regulamentacao",
+  "subtype": "regulatory_stop",
+  "score": 0.354,
+  "bbox": [
+   382.2,
+   473.3,
+   415.9,
+   510.4
+  ],
+  "quality": 0.1687,
+  "azimuth": 350.4,
+  "est_distance": 14.2,
+  "element_id": "sin-aveiro-00160",
+  "in_catalog": true,
+  "excluded_reason": null,
+  "suggested_class": null,
+  "crop_path": "recortes/det-sn-00055.jpg",
+  "extra": {
+   "p_router": 0.877,
+   "score_tipo": 0.341
+  }
+ },
+ {
+  "id": "det-sn-00111",
+  "image_id": "1164265129290855_y180",
+  "family": "sinal",
+  "class": "perigo",
+  "subtype": "desconhecido",
+  "score": 0.51,
+  "bbox": [
+   311.7,
+   209.3,
+   487.9,
+   505.2
+  ],
+  "quality": 0.4473,
+  "azimuth": 168.3,
+  "est_distance": 12.0,
+  "element_id": "sin-aveiro-00002",
+  "in_catalog": true,
+  "excluded_reason": null,
+  "suggested_class": null,
+  "crop_path": "recortes/det-sn-00111.jpg",
+  "extra": {
+   "p_router": 0.874,
+   "score_tipo": 0.874
+  }
+ },
+ {
+  "id": "det-sn-00426",
+  "image_id": "1518690156666348_y180",
+  "family": "sinal",
+  "class": "regulamentacao",
+  "subtype": "regulatory_stop",
+  "score": 0.396,
+  "bbox": [
+   289.3,
+   479.1,
+   325.7,
+   517.2
+  ],
+  "quality": 0.1832,
+  "azimuth": 340.3,
+  "est_distance": 14.9,
+  "element_id": "sin-aveiro-00160",
+  "in_catalog": true,
+  "excluded_reason": null,
+  "suggested_class": null,
+  "crop_path": "recortes/det-sn-00426.jpg",
+  "extra": {
+   "p_router": 0.842,
+   "score_tipo": 0.41
+  }
+ },
+ {
+  "id": "det-sn-00811",
+  "image_id": "26753247417650717_y270",
+  "family": "sinal",
+  "class": "regulamentacao",
+  "subtype": "regulatory_yield",
+  "score": 0.917,
+  "bbox": [
+   950.8,
+   479.0,
+   1022.9,
+   538.7
+  ],
+  "quality": 0.7475,
+  "azimuth": 186.5,
+  "est_distance": 20.2,
+  "element_id": "sin-aveiro-00113",
+  "in_catalog": true,
+  "excluded_reason": null,
+  "suggested_class": null,
+  "crop_path": "recortes/det-sn-00811.jpg",
+  "extra": {
+   "p_router": 0.949,
+   "score_tipo": 0.771
+  }
+ },
+ {
+  "id": "det-sn-00910",
+  "image_id": "36386776244254188_y180",
+  "family": "sinal",
+  "class": "orientacao_outros",
+  "subtype": "orientacao_outros",
+  "score": 0.908,
+  "bbox": [
+   1121.8,
+   377.2,
+   1248.5,
+   459.1
+  ],
+  "quality": 0.6665,
+  "azimuth": 80.8,
+  "est_distance": 33.2,
+  "element_id": "sin-aveiro-00001",
+  "in_catalog": true,
+  "excluded_reason": null,
+  "suggested_class": null,
+  "crop_path": "recortes/det-sn-00910.jpg",
+  "extra": {
+   "p_router": 0.947,
+   "score_tipo": 0.947
+  }
+ },
+ {
+  "id": "det-lz-00134",
+  "image_id": "1436380111878678_y180",
+  "family": "iluminacao",
+  "class": "poste_luz",
+  "subtype": null,
+  "score": 0.351,
+  "bbox": [
+   864.3,
+   235.3,
+   910.9,
+   289.4
+  ],
+  "quality": 0.1935,
+  "azimuth": null,
+  "est_distance": null,
+  "element_id": null,
+  "in_catalog": false,
+  "excluded_reason": "catalog_filter",
+  "suggested_class": null,
+  "crop_path": "recortes/det-lz-00134.jpg",
+  "extra": {
+   "p_simples": 0.903,
+   "p_decorativo": 0.024,
+   "p_rejeitar": 0.073
+  }
+ },
+ {
+  "id": "det-rs-00177",
+  "image_id": "1558675795669784_y90",
+  "family": "residuos",
+  "class": "subterraneo",
+  "subtype": null,
+  "score": 0.858,
+  "bbox": [
+   623.2,
+   402.6,
+   687.0,
+   459.4
+  ],
+  "quality": 0.6923,
+  "azimuth": null,
+  "est_distance": null,
+  "element_id": null,
+  "in_catalog": false,
+  "excluded_reason": "catalog_filter",
+  "suggested_class": null,
+  "crop_path": "recortes/det-rs-00177.jpg",
+  "extra": {}
+ },
+ {
+  "id": "det-rs-00178",
+  "image_id": "1558675795669784_y90",
+  "family": "residuos",
+  "class": "subterraneo",
+  "subtype": null,
+  "score": 0.831,
+  "bbox": [
+   581.5,
+   400.4,
+   636.6,
+   451.9
+  ],
+  "quality": 0.6159,
+  "azimuth": null,
+  "est_distance": null,
+  "element_id": null,
+  "in_catalog": false,
+  "excluded_reason": "catalog_filter",
+  "suggested_class": null,
+  "crop_path": "recortes/det-rs-00178.jpg",
+  "extra": {}
+ },
+ {
+  "id": "det-rs-00001",
+  "image_id": "1003046592373555_y180",
+  "family": "residuos",
+  "class": "contentor",
+  "subtype": null,
+  "score": 0.858,
+  "bbox": [
+   1394.5,
+   567.1,
+   1435.7,
+   616.3
+  ],
+  "quality": 0.3706,
+  "azimuth": null,
+  "est_distance": null,
+  "element_id": null,
+  "in_catalog": false,
+  "excluded_reason": "papeleira_filter",
+  "suggested_class": "papeleira",
+  "crop_path": "recortes/det-rs-00001.jpg",
+  "extra": {}
+ }
+]
