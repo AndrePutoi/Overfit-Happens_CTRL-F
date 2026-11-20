@@ -41,7 +41,7 @@ python -m ctrlf zona --help
 Opcionais: `requirements-treino.txt` (só para treinar modelos), `requirements-dev.txt` (testes), `requirements-yolo-opcional.txt` (só para o backend de privacidade `yolo`, que usa uma biblioteca AGPL-3.0; a omissão é o RF-DETR).
 
 ## 3. Obter os pesos
-Os pesos (cerca de 2,5 GB) **não estão no repositório**. Estão num zip à parte (**`Ctrl-F_pesos.zip`**, 2,5 GB): **[descarregar do Google Drive](COLAR_AQUI_A_LIGAÇÃO_DO_DRIVE)**.
+Os pesos (cerca de 2,5 GB) **não estão no repositório**. Estão num zip à parte (**`Ctrl-F_pesos.zip`**, 2,5 GB): **[descarregar do Google Drive]([COLAR_AQUI_A_LIGAÇÃO_DO_DRIVE](https://drive.google.com/drive/folders/1jhj4PVhDUhRxOHBiHwHsXTY-0p0lbeOs?usp=sharing))**.
 Para confirmar que o ficheiro ficou inteiro: `sha256sum Ctrl-F_pesos.zip` deve dar `5a2d39d830a8879e30ca55e0294b375b8ccdd9e2034586034d0501e5d4060798`. Este zip tem o **detetor e o classificador de contentores finais** (treinados só com anotações do Porto).
 
 ```bash
@@ -57,7 +57,7 @@ python -m ctrlf.scripts.exportar_pesos --verificar $UMS_MODELS_DIR     # confere
 - O pacote `weights` diz ficheiro a ficheiro **onde** deve estar cada peso.
 
 ## 4. Token do Mapillary
-1. Crie uma conta em <https://drive.google.com/drive/folders/1jhj4PVhDUhRxOHBiHwHsXTY-0p0lbeOs?usp=sharing> e gere um token de cliente (começa por `MLY|`).
+1. Crie uma conta em <https://www.mapillary.com/developer> e gere um token de cliente (começa por `MLY|`).
 2. Guarde-o **fora do git**, num ficheiro `.env` na raiz (já está no `.gitignore`):
 ```bash
 echo 'MAPILLARY_TOKEN=MLY|o_seu_token' > .env
